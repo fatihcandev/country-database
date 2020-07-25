@@ -1,6 +1,6 @@
 # 🗺️ Country Database
 
-This is a searchable country database.
+A searchable country database.
 
 # 🧰 Toolbox
 
