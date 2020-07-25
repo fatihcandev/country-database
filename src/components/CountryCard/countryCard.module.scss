@@ -1,6 +1,6 @@
 .wrapper {
     max-width: 100%;
-    height: 250px;
+    min-height: 250px;
     box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
     border-radius: 5px;
 
@@ -19,5 +19,14 @@
 }
 
 .content {
-    padding: 10px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, auto);
+    row-gap: 10px;
+}
+
+.name {
+    font-size: 19px;
+    font-weight: 500;
 }
