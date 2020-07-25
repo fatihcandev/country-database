@@ -3,15 +3,28 @@
 .wrapper {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: auto 1fr;
-    row-gap: 20px;
+    grid-template-rows: repeat(2, auto) 1fr;
+    row-gap: 40px;
     padding: 20px;
     min-height: 100vh;
+}
+
+.filterSection {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, auto);
+    row-gap: 20px;
+
+    @media ($md) {
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: 1fr;
+        column-gap: 20px;
+    }
 }
 
 .cards {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(225px, 1fr));
     grid-template-rows: 1fr;
-    gap: 20px;
+    gap: 30px;
 }
