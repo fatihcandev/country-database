@@ -3,9 +3,11 @@ import { ApolloClient, gql, InMemoryCache } from "@apollo/client/core";
 import { RestLink } from "apollo-link-rest";
 
 export const query = gql`
-  query GetCountry {
+  query GetCountries {
     countries @rest(type: "Country", path:"all") {
       name
+      population
+      region
       capital
       flag
     }
