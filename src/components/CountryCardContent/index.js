@@ -1,4 +1,4 @@
-import styles from './CountryCardContent.module.css'
+import styles from './countryCardContent.module.css'
 
 const CountryCardContent = ({ title, text }) => (
   <div className={styles.wrapper}>
