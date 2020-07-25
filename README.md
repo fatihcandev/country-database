@@ -1,6 +1,6 @@
 # 🗺️ Country Database
 
-A searchable country database.
+A searchable database of all the countries in the world.
 
 # 🧰 Toolbox
 
