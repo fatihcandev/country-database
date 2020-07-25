@@ -6,10 +6,11 @@ import CountryCard from '../components/CountryCard';
 import SearchBar from '../components/SearchBar';
 import Title from '../components/Title';
 import RegionFilter from '../components/RegionFilter';
-import layoutStyles from '../components/Layout/layout.module.scss';
 import Loading from '../components/Loading';
+import SEO from '../components/SEO';
+import layoutStyles from '../components/Layout/layout.module.scss';
 
-const HomePage = () => {
+const Home = () => {
   const [searchInput, setSearchInput] = useState("");
   const [regionFilter, setRegionFilter] = useState("");
   const { loading, error, data } = useQuery(query);
@@ -19,6 +20,7 @@ const HomePage = () => {
 
   return (
     <Layout>
+      <SEO />
       <Title />
       <div className={layoutStyles.filterSection}>
         <SearchBar onSearch={(input) => setSearchInput(input)} />
@@ -69,4 +71,4 @@ const HomePage = () => {
   )
 }
 
-export default HomePage
+export default Home
